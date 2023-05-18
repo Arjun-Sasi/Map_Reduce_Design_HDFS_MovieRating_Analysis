@@ -7,6 +7,8 @@
 #!/usr/bin/env python 
  
 import sys 
+
+#Mapper:
  
 def load_years(filename):     years = set()     with open(filename) as f:         for line in f:             years.update(line.strip().split()) 
     return years 
@@ -18,7 +20,7 @@ for line in sys.stdin:     uid, title, genres, year, rating = line.strip().split
             print(f"{genre}\t{title}|{rating}\t1") 
  
  
-Combiner: 
+#Combiner: 
  
 #!/usr/bin/env python 
  
@@ -41,7 +43,7 @@ if current_genre:
         print(f"{current_genre}\t{title}|{avg_rating}\t{len(ratings)}") 
  
  
-Reducer: 
+#Reducer: 
  
 #!/usr/bin/env python 
  
