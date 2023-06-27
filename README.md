@@ -1,4 +1,4 @@
-# MR_Design_MovieRating_Analysis
+# MR(Map Reduce)_Design_MovieRating_Analysis
 
 1. Use of HDFS 
  
